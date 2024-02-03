@@ -1,0 +1,165 @@
+{
+   "extends": [
+      "@nuxt/eslint-config"
+   ],
+   "env": {
+      "browser": true
+   },
+   "rules": {
+      "semi-style": [
+         "error",
+         "last"
+      ],
+      // Overriding vue / nuxt rules
+      "vue/html-indent": "off",
+      "vue/html-closing-bracket-newline": [
+         "error",
+         {
+            "singleline": "never",
+            "multiline": "never"
+         }
+      ],
+      "vue/multiline-html-element-content-newline": [
+         "error",
+         {
+            "ignoreWhenEmpty": true,
+            "allowEmptyLines": true
+            // "ignores": ["pre", "textarea"],
+         }
+      ],
+      "vue/first-attribute-linebreak": "off",
+      "vue/max-attributes-per-line": "off",
+      // "vue/max-attributes-per-line": [
+      //     "error",
+      //     {
+      //         "singleline": {
+      //             "max": 8 //TODO: Fix this later
+      //         }
+      //     }
+      // ],
+      "vue/max-len": [
+         "error",
+         {
+            "code": 180,
+            "template": 180,
+            "comments": 180,
+            "ignorePattern": "",
+            "ignoreComments": false,
+            "ignoreTrailingComments": false,
+            "ignoreUrls": true,
+            "ignoreStrings": false,
+            "ignoreTemplateLiterals": false,
+            "ignoreRegExpLiterals": false,
+            "ignoreHTMLAttributeValues": true,
+            "ignoreHTMLTextContents": true
+         }
+      ],
+      "vue/no-reserved-component-names": [
+         "error",
+         {
+            "disallowVueBuiltInComponents": false,
+            "disallowVue3BuiltInComponents": false
+         }
+      ],
+      "vue/component-name-in-template-casing": [
+         "error",
+         "kebab-case"
+      ],
+      "vue/component-definition-name-casing": [
+         "error",
+         "PascalCase"
+      ],
+      // Non vue rules
+      // Max Lines define maximum number of lines in a file.
+      "max-lines": [
+         "error",
+         500 // TODO: Decide to fix 350 or 500.
+      ],
+      // Max Statements define maximum number of statements in a function.
+      "max-statements": [
+         "error",
+         50
+      ],
+      // Max parameters in a function.
+      "max-params": [
+         "error",
+         5
+      ],
+      "quotes": [
+         "error",
+         "double"
+      ],
+      "padded-blocks": [
+         "error",
+         "always"
+      ],
+      "func-style": [
+         "error",
+         "expression",
+         {
+            // Allows only arrow functions in the code.
+            "allowArrowFunctions": true
+         }
+      ],
+      "no-else-return": "error",
+      "padding-line-between-statements": [
+         "warn",
+         {
+            "blankLine": "always",
+            "prev": "*",
+            "next": [
+               "block",
+               "block-like",
+               // "break",
+               "case",
+               "class",
+               "const",
+               "continue",
+               "debugger",
+               "default",
+               "do",
+               "export",
+               "for",
+               "function",
+               "if",
+               "let",
+               "return",
+               "switch",
+               "throw",
+               "try",
+               "var",
+               "while",
+               "with"
+            ]
+         },
+         {
+            "blankLine": "always",
+            "prev": [
+               "block",
+               "block-like",
+               // "break",
+               "case",
+               "class",
+               "const",
+               "continue",
+               "debugger",
+               "default",
+               "do",
+               "export",
+               "for",
+               "function",
+               "if",
+               "let",
+               "return",
+               "switch",
+               "throw",
+               "try",
+               "var",
+               "while",
+               "with"
+            ],
+            "next": "*"
+         }
+      ]
+   }
+}
