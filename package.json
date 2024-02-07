@@ -1,20 +1,39 @@
 {
-  "name": "nuxt-app",
+  "name": "mouli-bheemaneti",
+  "description": "Moui Bheemaneti is a personal project focuses on portfolio of Mouli Bheemaneti.",
+  "version": "1.0.0",
+  "author": "Mouli Bheemaneti <moulibheemaneti99@gmail.com>",
+  "homepage": "https://github.com/moulib-narayana/moulibheemaneti-main",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/moulib-narayana/moulibheemaneti-main"
+  },
+  "keywords": [
+    "Mouli Bheemaneti, Personal Website"
+  ],
   "private": true,
   "type": "module",
   "scripts": {
+    "lint": "eslint --max-warnings=0 .",
+    "lint:fix": "eslint --fix .",
+    "clean": "rm -rf .nuxt dist node_modules .output yarn.lock",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "update": "yarn upgrade-interactive"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/robots": "^3.0.0",
     "eslint": "^8.56.0",
-    "nuxt": "^3.10.0",
+    "nuxt": "^3.10.1",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }

@@ -1,0 +1,23 @@
+{
+    "name": "Mouli Bheemaneti - Main Website",
+    "short_name": "Mouli Website",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "A main website for Mouli Bheemaneti's personal portfolio. An awesome app built that is built with Nuxt-3, by Mouli Bheemaneti.",
+    "icons": [
+        {
+            "src": "manifest.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "manifest.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
