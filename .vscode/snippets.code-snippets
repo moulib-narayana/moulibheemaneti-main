@@ -1,0 +1,90 @@
+{
+	// Place your nconnect_admin_new workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Single File Component Composition API Boilerplate": {
+    "scope": "vue",
+		"prefix": ["vue-composition", "vue-setup"],
+		"body": "<template>\n\t$0\n</template>\n\n<script lang=\"ts\" setup>\n</script>\n\n<style lang=\"scss\">\n</style>",
+	},
+
+  "Print shorcut - Console log": {
+    "scope": "javascript,typescript",
+		"prefix": ["print", "csl", "conso", "consolelog"],
+		"body": "console.log(\"$1\",$2)"
+	},
+
+  // API Calls Related function snippets.
+  "API - Get": {
+    "scope": "javascript,typescript",
+		"prefix": ["apiGet", "apiget"],
+		"body": [
+			"const api$1 = async (): Promise<ApiResponse<$2>> => {",
+			"\tconst res = await fetch.get<$2>($3);\n",
+			"\tif (!res.error){\n$4\n}\n\nreturn res;\n}",
+		],
+	},
+
+	"API - Post": {
+    "scope": "javascript,typescript",
+		"prefix": ["apiPost", "apipost"],
+		"body": [
+			"const api$1 = async (): Promise<ApiResponse<$2>> => {",
+			"\tconst res = await fetch.post<$2>($3);\n",
+			"\tif (!res.error){\n$4\n}\n\nreturn res;\n}",
+		],
+	},
+
+	"API - Put": {
+		"scope": "javascript,typescript",
+		"prefix": ["apiPut", "apiput"],
+		"body": [
+			"const api$1 = async (): Promise<ApiResponse<$2>> => {",
+			"\tconst res = await fetch.put<$2>($3);\n",
+			"\tif (!res.error){\n$4\n}\n\nreturn res;\n}",
+		],
+	},
+
+	"API - Delete": {
+		"scope": "javascript,typescript",
+		"prefix": ["apiDelete", "apidelete"],
+		"body": [
+			"const api$1 = async (): Promise<ApiResponse<$2>> => {",
+			"\tconst res = await fetch.delete<$2>($3);\n",
+			"\tif (!res.error){\n$4\n}\n\nreturn res;\n}",
+		],
+	},
+
+  // SCSS Related snippets.
+  "REM function in scss": {
+    "scope": "css,scss",
+		"prefix": "rem",
+		"body": "rem($1)",
+	},
+
+	"Create CSS class with cursor at css-name": {
+    "scope": "css,scss",
+		"prefix": "css-name",
+		"body": ".$1 {\n\t$2\n}",
+	},
+
+  "Create SCSS variables with cursor at scss varibale name": {
+    "scope": "scss",
+		"prefix": "$, var-scss, scss-var, scss-var-name",
+		"body": "///\n$$1: $2;",
+	},
+}

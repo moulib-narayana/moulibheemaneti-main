@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body {
-   font-family: "Poppins", sans-serif;
-   background-color: black;
-   color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
 
-   display: flex;
-   min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 // ::-webkit-scrollbar {
@@ -17,18 +17,18 @@ body {
 // }
 
 #__nuxt {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-   flex-grow: 1;
+  flex-grow: 1;
 }
 
 main {
-   flex-grow: 1;
+  flex-grow: 1;
 }
 
 footer {
-   font-size: 0.75rem;
-   text-align: center;
-   padding: 2rem 0;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 2rem 0;
 }

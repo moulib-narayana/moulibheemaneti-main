@@ -1,5 +1,5 @@
 <template>
-    <main>
-        Main
-    </main>
+  <main>
+    Main
+  </main>
 </template>

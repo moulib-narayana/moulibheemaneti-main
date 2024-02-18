@@ -18,7 +18,7 @@
     "lint:fix": "eslint --fix .",
     "clean": "rm -rf .nuxt dist node_modules .output yarn.lock",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "yarn lint; nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
