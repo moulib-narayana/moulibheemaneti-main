@@ -15,8 +15,8 @@ export default defineNuxtConfig({
       link: [
         {
           // https://developer.chrome.com/docs/lighthouse/pwa/installable-manifest/?utm_source=lighthouse&utm_medium=devtools
-          href: "manifest.json",
           rel: "manifest",
+          href: "manifest.json",
         },
       ],
     },

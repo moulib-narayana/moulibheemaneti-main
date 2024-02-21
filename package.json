@@ -21,8 +21,11 @@
     "dev": "yarn lint; nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "p": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "update": "yarn upgrade-interactive"
+    "update": "yarn upgrade-interactive",
+    "cr": "yarn clean && yarn install && yarn dev",
+    "cbp": "yarn clean; yarn install && yarn build && yarn p"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
