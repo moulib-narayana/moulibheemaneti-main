@@ -1,6 +1,6 @@
 <template>
   <span class="mb-icon">
-    <slot></slot>
+    <slot />
   </span>
 </template>
 
@@ -9,7 +9,7 @@
 const props = defineProps({
   color: {
     type: String,
-    default: 'white',
+    default: "white",
   },
 
   size: {
@@ -18,7 +18,7 @@ const props = defineProps({
   }
 })
 
-const iconSize = computed(() => (props.size) / 16 + 'rem')
+const iconSize = computed(() => (props.size) / 16 + "rem")
 </script>
 
 <style lang="scss">

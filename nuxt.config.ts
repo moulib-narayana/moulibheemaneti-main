@@ -44,8 +44,8 @@ export default defineNuxtConfig({
 
   components: [
     // ~/components/icons/Instagram.vue => <Instagram />
-    { path: '~/components/icons/', pathPrefix: false },
+    { path: "~/components/icons/", pathPrefix: false },
 
-    '~/components'
+    "~/components"
   ],
 })
