@@ -2,7 +2,7 @@
   <header class="header">
     <NuxtImg src="/manifest.png" alt="Mouli Bheemaneti's Brand Logo" sizes="64px" height="50" densities="x1 x2" />
 
-    <MbIcon class="header__icon">
+    <MbIcon>
       <Instagram />
     </MbIcon>
     <MbIcon>
@@ -34,13 +34,23 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 
-    &:last-child {
-      margin-right: 0;
-    }
-
     &:hover {
       transform: scale(1.05);
     }
+
+
+    @include small-screen {
+      margin-right: 2rem;
+      ;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include extra-small-screen {
+    padding: 2rem;
   }
 }
 </style>

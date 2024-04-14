@@ -34,8 +34,16 @@ export default defineNuxtConfig({
     Comment: "Comment here",
   },
 
+  experimental: {
+    appManifest: true,
+  },
+
   nitro: {
     compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
   },
 
   css: [
@@ -48,4 +56,14 @@ export default defineNuxtConfig({
 
     "~/components"
   ],
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@use '~/assets/scss/_helpers.scss' as *;",
+        },
+      },
+    },
+  },
 })

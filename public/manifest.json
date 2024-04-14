@@ -1,7 +1,9 @@
 {
-  "name": "Mouli Bheemaneti - Main Website",
-  "short_name": "Mouli Website",
+  "short_name": "MB Music Website",
+  "name": "Mouli Bheemaneti - Music Website",
   "start_url": "/",
+  "id": "com.moulibheemaneti.music-website",
+  "orientation": "any",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
@@ -14,10 +16,25 @@
       "purpose": "maskable"
     },
     {
-      "src": "manifest.png",
+      "src": "manifest-196.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "manifest.png",
+      "sizes": "512x512",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Mouli Bheemaneti"
+    },
+    {
+      "src": "manifest-320.png",
+      "sizes": "320x320",
+      "type": "image/gif",
+      "label": "Mouli Bheemaneti"
     }
   ]
 }

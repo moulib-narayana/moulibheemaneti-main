@@ -6,6 +6,8 @@
 
 <script lang="ts" setup>
 
+const { extraSmallScreen } = useScreenWidth();
+
 const props = defineProps({
   color: {
     type: String,
@@ -18,7 +20,14 @@ const props = defineProps({
   }
 })
 
-const iconSize = computed(() => (props.size) / 16 + "rem")
+const iconSize = computed(() => {
+
+  // if (extraSmallScreen)
+  //   return (props.size - 8) / 16 + "rem";
+
+  return (props.size) / 16 + "rem";
+
+})
 </script>
 
 <style lang="scss">
