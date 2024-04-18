@@ -22,8 +22,8 @@ const props = defineProps({
 
 const iconSize = computed(() => {
 
-  // if (extraSmallScreen)
-  //   return (props.size - 8) / 16 + "rem";
+  if (extraSmallScreen)
+    return (props.size - 8) / 16 + "rem";
 
   return (props.size) / 16 + "rem";
 
