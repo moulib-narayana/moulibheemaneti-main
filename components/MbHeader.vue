@@ -1,19 +1,54 @@
 <template>
   <header class="header">
-    <NuxtImg src="/manifest.png" alt="Mouli Bheemaneti's Brand Logo" sizes="64px" height="50" densities="x1 x2" />
+    <NuxtImg src="/manifest.png" alt="Mouli Bheemaneti's Brand Logo" sizes="64px" height="50" densities="x1 x2"
+      @click="goToHome()" />
 
-    <MbIcon>
+    <MbIcon @click="goToSocialAccounts('instagram')">
       <Instagram />
     </MbIcon>
-    <MbIcon>
+    <MbIcon @click="goToSocialAccounts('spotify')">
       <Spotify />
     </MbIcon>
-    <MbIcon>
+    <MbIcon @click="goToSocialAccounts('youtube')">
       <Youtube />
     </MbIcon>
 
   </header>
 </template>
+
+<script lang="ts" setup>
+const router = useRouter();
+
+const goToHome = () => {
+
+  router.push("/");
+
+}
+
+const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
+
+  switch (account) {
+
+    case "instagram":
+      window.open("https://www.instagram.com/mouli.bheemaneti", "_blank");
+      break;
+
+    case "spotify":
+      window.open("https://open.spotify.com/artist/2ny7JyTgSvXGCnCJGx3jSt?si=mQ9u7eroSrywq7KCJAzUmg", "_blank");
+      break;
+
+    case "youtube":
+      window.open("https://www.youtube.com/bemouli");
+      break;
+
+    default:
+      break;
+
+  }
+
+}
+
+</script>
 
 <style lang="scss">
 .header {

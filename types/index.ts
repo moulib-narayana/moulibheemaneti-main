@@ -3,7 +3,7 @@ export interface Album {
   name: string;
   artist: string;
   featuredArtists?: string[];
-  releaseDate: string;
+  releaseDate: Date;
   coverArt: string;
   urls?: MusicStreamingService;
 }

@@ -9,7 +9,6 @@
 <style lang="scss">
 .page-index {
   display: flex;
-  padding: rem(24);
   flex-direction: column;
   gap: rem(24);
 

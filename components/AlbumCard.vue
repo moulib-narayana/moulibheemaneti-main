@@ -1,29 +1,43 @@
 <template>
-  <div class="album-card">
-    <NuxtImg :src="album.coverArt" alt="Album cover" sizes="80px sm:80px md:80px" height="80px" densities="x1 x2" />
+  <ClientOnly>
+    <NuxtLink :to="albumRoute" class="album-card">
+      <NuxtImg :src="albumArtPath" alt="Album cover" sizes="80px sm:80px md:80px" height="80px" densities="x1 x2" />
 
-    <div class="album-card__details">
-      <p>{{ album.name }}</p>
+      <div class="album-card__details">
+        <p class="album__name">
+          {{ album.name }}
+        </p>
 
-      <p>{{ album.artist }}</p>
+        <p class="album__artists">
+          {{ album.artist }}
+        </p>
 
-      <MbIcon>
-        <ArrowRight />
-      </MbIcon>
-    </div>
+        <p class="album__release-date">
+          {{ formatDate(album.releaseDate) }}
+        </p>
 
-  </div>
+        <MbIcon>
+          <ArrowRight />
+        </MbIcon>
+      </div>
+
+    </NuxtLink>
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
 import type { Album } from "~/types";
 
-defineProps({
+const props = defineProps({
   album: {
     type: Object as PropType<Album>,
     required: true,
   },
 });
+
+const albumArtPath = computed(() => getLocalDynamicImageUrl("images/album-arts", props.album.coverArt));
+
+const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".png", "")}`);
 
 </script>
 
@@ -67,6 +81,23 @@ defineProps({
     .mb-icon {
       display: none;
     }
+  }
+}
+
+.album {
+  &__name {
+    font-size: rem(18);
+    font-weight: 500;
+  }
+
+  &__artists {
+    font-size: rem(14);
+    font-weight: 400;
+  }
+
+  &__release-date {
+    font-size: rem(12);
+    font-weight: 400;
   }
 }
 </style>
