@@ -51,6 +51,8 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
 </script>
 
 <style lang="scss">
+@use '~/assets/scss/_helpers.scss' as *;
+
 .header {
   display: flex;
   align-items: center;

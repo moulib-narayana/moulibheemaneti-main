@@ -46,6 +46,8 @@ const handleError = () => {
 </script>
 
 <style lang="scss">
+@use '~/assets/scss/_helpers.scss' as *;
+
 .page-layout {
   flex: 1;
 }

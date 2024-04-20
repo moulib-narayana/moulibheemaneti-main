@@ -42,6 +42,8 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".png",
 </script>
 
 <style lang="scss">
+@use '~/assets/scss/_helpers.scss' as *;
+
 .album-card {
   display: flex;
   gap: rem(24);

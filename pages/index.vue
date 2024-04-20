@@ -7,6 +7,8 @@
 </template>
 
 <style lang="scss">
+@use '~/assets/scss/_helpers.scss' as *;
+
 .page-index {
   display: flex;
   flex-direction: column;
