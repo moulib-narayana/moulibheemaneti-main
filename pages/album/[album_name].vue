@@ -1,6 +1,6 @@
 <template>
   <div class="page page--album">
-    Album page
+    ds
   </div>
 </template>
 

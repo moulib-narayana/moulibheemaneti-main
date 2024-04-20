@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  ssr: false,
+
   app: {
     head: {
       htmlAttrs: { lang: "en" },

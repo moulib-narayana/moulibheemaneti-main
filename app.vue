@@ -3,13 +3,5 @@
 
   <NuxtPage />
 
-  <footer>
-    Copyright © 2022 Mouli Bheemaneti. All rights reserved.
-  </footer>
+  <MbFooter />
 </template>
-
-<style lang="scss">
-footer {
-  text-align: center;
-}
-</style>
