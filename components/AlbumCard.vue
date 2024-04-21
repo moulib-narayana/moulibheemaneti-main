@@ -40,7 +40,7 @@ const props = defineProps({
 
 const albumArtPath = computed(() => getLocalDynamicImageUrl("images/album-arts", props.album.coverArt));
 
-const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".png", "")}`);
+const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".webp", "")}`);
 
 </script>
 
