@@ -6,34 +6,39 @@
         :alt="`${album!.name} - Album Art`" />
     </div>
 
-    <h1 class="page-album__title">
-      {{ album!.name }}
-    </h1>
+    <div class="page">
 
-    <div v-if="Object.values(album?.urls ?? {}).length > 0" class="page-album__streaming-links">
-      <MbButton v-for="(item, index) in album?.urls" :key="index" class="mb-button--streaming-link">
-        <template #prefix>
-          <img :src="getLocalDynamicImageUrl('images/platforms', platformAssetUrl[`${index}`]!)">
-        </template>
+      <h1 class="page-album__title">
+        {{ album!.name }}
+      </h1>
 
-        {{ camelToPascalWithSpaces(index) }}
-      </MbButton>
-    </div>
+      <div v-if="Object.values(album?.urls ?? {}).length > 0" class="page-album__streaming-links">
+        <MbButton v-for="(item, index) in album?.urls" :key="index" class="mb-button--streaming-link">
+          <template #prefix>
+            <NuxtImg :src="getLocalDynamicImageUrl('images/platforms', platformAssetUrl[`${index}`]!)"
+              :alt="`${platformAssetUrl[`${index}`]!} - Music Platform Icon`" />
+          </template>
 
-    <div v-else class="no-streaming-links">
-      <p>
-        No platforms available for streaming. Check back later...!!!
-        <br>
-        Till then, checkout Mouli Bheemaneti's Youtube channel.
-      </p>
+          {{ camelToPascalWithSpaces(index) }}
+        </MbButton>
+      </div>
 
-      <MbButton class="mb-button--streaming-link" @click="redirectToYoutubeChannel()">
-        <template #prefix>
-          <img :src="getLocalDynamicImageUrl('images/platforms', 'youtube.webp')">
-        </template>
+      <div v-else class="no-streaming-links">
+        <p>
+          No platforms available for streaming. Check back later...!!!
+          <br>
+          Till then, checkout Mouli Bheemaneti's Youtube channel.
+        </p>
 
-        Youtube
-      </MbButton>
+        <MbButton class="mb-button--streaming-link" @click="redirectToYoutubeChannel()">
+          <template #prefix>
+            <NuxtImg :src="getLocalDynamicImageUrl('images/platforms', 'youtube.webp')"
+              alt="Youtube Icon - Mouli Bheemaneti's Channel" />
+          </template>
+
+          Youtube
+        </MbButton>
+      </div>
     </div>
 
   </div>
@@ -59,9 +64,13 @@ const redirectToYoutubeChannel = () => {
 <style lang="scss">
 @use '~/assets/scss/_helpers.scss' as *;
 
+.page--album {
+  padding: 0;
+}
+
 .page-album {
   &__header {
-    height: 300px;
+    height: rem(424);
     background-image: v-bind("album?.coverArt ? `url(${getLocalDynamicImageUrl('images/album-arts', album.coverArt)})` : 'none'");
     background-size: cover;
     background-position: center;
@@ -71,10 +80,11 @@ const redirectToYoutubeChannel = () => {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     img {
-      height: 80%;
+      height: 60%;
+      margin-bottom: rem(32);
       aspect-ratio: 1/1;
 
       backdrop-filter: blur(10px);
@@ -89,18 +99,21 @@ const redirectToYoutubeChannel = () => {
     }
 
     @include extra-small-screen {
-      height: 200px;
+      height: rem(300);
 
       img {
-        height: 90%;
+        height: 60%;
+        margin-bottom: rem(8);
       }
     }
   }
 
   &__title {
     text-align: center;
-    // font-size: 2rem;
-    margin-top: 1rem;
+
+    @include extra-small-screen {
+      font-size: 1.5rem;
+    }
   }
 
   &__streaming-links {
@@ -121,6 +134,13 @@ const redirectToYoutubeChannel = () => {
     &__streaming-links {
       grid-template-columns: 1fr;
     }
+  }
+
+  @include large-screen {
+    &__streaming-links {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
   }
 }
 

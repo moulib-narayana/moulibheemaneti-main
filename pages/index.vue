@@ -1,5 +1,6 @@
 <template>
   <main class="page page-index">
+    <div class="jumbotron" />
     <div class="page-index__discography">
       <AlbumCard v-for="album in albums" :key="album.id" :album="album" />
     </div>
@@ -35,5 +36,10 @@
       grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
     }
   }
+}
+
+.jumbotron {
+  background-color: black;
+  height: rem(80);
 }
 </style>

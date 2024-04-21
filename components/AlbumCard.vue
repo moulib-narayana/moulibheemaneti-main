@@ -2,7 +2,7 @@
   <ClientOnly>
     <NuxtLink :to="albumRoute" class="album-card">
       <div class="album-card__image">
-        <NuxtImg :src="albumArtPath" :alt="`${album.name} - Album Art`" sizes="120px " height="120px"
+        <NuxtImg :src="albumArtPath" :alt="`${album.name} - Album Art`" sizes="120px" height="120px"
           densities="x1 x2" />
       </div>
 
@@ -51,6 +51,8 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".webp"
   display: flex;
   gap: rem(24);
 
+  min-height: rem(152);
+
   cursor: pointer;
 
   background-color: rgba($color: #ffffff, $alpha: 0.1);
@@ -66,6 +68,7 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".webp"
     min-height: rem(120);
     min-width: rem(120);
     object-fit: cover;
+    aspect-ratio: 1/1;
   }
 
   &__details {

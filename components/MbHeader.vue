@@ -58,6 +58,11 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
   align-items: center;
   padding: 1rem 3rem;
 
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
   img {
     cursor: pointer;
     height: 64px;
@@ -86,7 +91,7 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
   }
 
   @include extra-small-screen {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 </style>
