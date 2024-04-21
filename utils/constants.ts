@@ -1,4 +1,21 @@
-import type { Album } from "~/types";
+import type { Album, MusicStreamingService } from "~/types";
+
+export const platformAssetUrl: MusicStreamingService = {
+  spotify: "spotify.webp",
+  appleMusic: "apple-music.webp",
+  tidal: "tidal.webp",
+  jioSaavn: "jio-saavn.webp",
+  youtubeMusic: "youtube-music.webp",
+  amazonMusic: "amazon-music.webp",
+
+  // Not supported yet
+  gaana: "gaana.webp",
+  wynk: "wynk.webp",
+  deezer: "deezer.webp",
+  napster: "napster.webp",
+  soundcloud: "soundcloud.webp",
+  reverbnation: "reverbnation.webp",
+}
 
 export const albums: Album[] = [
   {
@@ -96,7 +113,10 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2023-07-26"),
     coverArt: "mb-themes-vol-1.webp",
-    urls: {}
+    urls: {
+      appleMusic: "https://music.apple.com/us/album/mb-themes-vol-1-ep/1699024148",
+      jioSaavn: "https://www.jiosaavn.com/album/mb-themes-vol.-1/TP0dKIdU6QM_?autoplay=enabled",
+    }
   },
   {
     id: "13",

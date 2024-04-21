@@ -10,6 +10,32 @@
       {{ album!.name }}
     </h1>
 
+    <div v-if="Object.values(album?.urls ?? {}).length > 0" class="page-album__streaming-links">
+      <MbButton v-for="(item, index) in album?.urls" :key="index" class="mb-button--streaming-link">
+        <template #prefix>
+          <img :src="getLocalDynamicImageUrl('images/platforms', platformAssetUrl[`${index}`]!)">
+        </template>
+
+        {{ camelToPascalWithSpaces(index) }}
+      </MbButton>
+    </div>
+
+    <div v-else class="no-streaming-links">
+      <p>
+        No platforms available for streaming. Check back later...!!!
+        <br>
+        Till then, checkout Mouli Bheemaneti's Youtube channel.
+      </p>
+
+      <MbButton class="mb-button--streaming-link" @click="redirectToYoutubeChannel()">
+        <template #prefix>
+          <img :src="getLocalDynamicImageUrl('images/platforms', 'youtube.webp')">
+        </template>
+
+        Youtube
+      </MbButton>
+    </div>
+
   </div>
 </template>
 
@@ -18,9 +44,16 @@ const router = useRouter();
 
 const album = computed(() => {
 
-  return albums.find((album) => album.coverArt.includes(router.currentRoute.value.params.album_name + ".webp"));
+  return albums.find((album) => album.coverArt === router.currentRoute.value.params.album_name + ".webp");
 
 });
+
+const redirectToYoutubeChannel = () => {
+
+  window.open("https://www.youtube.com/bemouli", "_blank");
+
+};
+
 </script>
 
 <style lang="scss">
@@ -69,6 +102,26 @@ const album = computed(() => {
     // font-size: 2rem;
     margin-top: 1rem;
   }
+
+  &__streaming-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  @include extra-small-screen {
+    &__streaming-links {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include small-screen {
+    &__streaming-links {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .blur-layer {
@@ -78,5 +131,49 @@ const album = computed(() => {
 
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+}
+
+.mb-button--streaming-link {
+  transition: transform 0.3s;
+  width: 100%;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .mb-icon {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+
+    .mb-icon {
+      opacity: 1;
+    }
+  }
+}
+
+.no-streaming-links {
+  width: 70%;
+  margin: 0 auto;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+  }
 }
 </style>
