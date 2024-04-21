@@ -1,7 +1,10 @@
 <template>
   <ClientOnly>
     <NuxtLink :to="albumRoute" class="album-card">
-      <NuxtImg :src="albumArtPath" alt="Album cover" sizes="80px sm:80px md:80px" height="80px" densities="x1 x2" />
+      <div class="album-card__image">
+        <NuxtImg :src="albumArtPath" :alt="`${album.name} - Album Art`" sizes="120px " height="120px"
+          densities="x1 x2" />
+      </div>
 
       <div class="album-card__details">
         <p class="album__name">
@@ -56,7 +59,10 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".png",
 
   transition: transform 0.3s;
 
-  img {
+  &__image,
+  &__image img {
+    height: rem(120);
+    width: rem(120);
     min-height: rem(120);
     min-width: rem(120);
     object-fit: cover;

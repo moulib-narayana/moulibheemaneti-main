@@ -78,7 +78,6 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
 
     @include small-screen {
       margin-right: 2rem;
-      ;
     }
 
     &:last-child {

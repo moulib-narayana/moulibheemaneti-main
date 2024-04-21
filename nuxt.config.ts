@@ -16,6 +16,10 @@ export default defineNuxtConfig({
       ],
       link: [
         {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com"
+        },
+        {
           // https://developer.chrome.com/docs/lighthouse/pwa/installable-manifest/?utm_source=lighthouse&utm_medium=devtools
           rel: "manifest",
           href: "manifest.json",

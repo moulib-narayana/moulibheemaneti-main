@@ -1,6 +1,8 @@
 <template>
   <div class="page page--album">
-    ds
+    <div class="header">
+      asdf
+    </div>
   </div>
 </template>
 

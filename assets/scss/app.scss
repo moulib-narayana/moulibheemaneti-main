@@ -37,6 +37,10 @@ footer {
 .page {
   padding: rem(24) rem(48);
   flex: 1;
+
+  @include extra-small-screen {
+    padding: 1rem 2rem;
+  }
 }
 
 a {
