@@ -13,7 +13,8 @@
       </h1>
 
       <div v-if="Object.values(album?.urls ?? {}).length > 0" class="page-album__streaming-links">
-        <MbButton v-for="(item, index) in album?.urls" :key="index" class="mb-button--streaming-link">
+        <MbButton v-for="(item, index) in album?.urls" :key="index" class="mb-button--streaming-link"
+          @click="redirectToPlatform(album!, index)">
           <template #prefix>
             <NuxtImg :src="getLocalDynamicImageUrl('images/platforms', platformAssetUrl[`${index}`]!)"
               :alt="`${platformAssetUrl[`${index}`]!} - Music Platform Icon`" />
@@ -45,17 +46,39 @@
 </template>
 
 <script lang="ts" setup>
+import type { Album } from "~/types";
+
 const router = useRouter();
 
 const album = computed(() => {
 
-  return albums.find((album) => album.coverArt === router.currentRoute.value.params.album_name + ".webp");
+  const album = albums.find((album) => album.coverArt === router.currentRoute.value.params.album_name + ".webp");
+
+  if (album === undefined) {
+
+    router.push("/404");
+
+    return;
+
+  }
+
+  return album;
 
 });
 
 const redirectToYoutubeChannel = () => {
 
   window.open("https://www.youtube.com/bemouli", "_blank");
+
+};
+
+const redirectToPlatform = (album: Album, platform: string) => {
+
+  const streamingService: Record<string, string> = album.urls as Record<string, string> ?? {};
+
+  if (streamingService[`${platform}`] === undefined) return;
+
+  window.open(streamingService[`${platform}`], "_blank");
 
 };
 

@@ -24,7 +24,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-05-29"),
     coverArt: "love-proposal.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/track/6poc2LV3wtr98T8NhFeols",
+      appleMusic: "https://music.apple.com/in/album/love-proposal/1521871296?i=1521871297",
+      tidal: "https://tidal.com/browse/track/142327977",
+      youtubeMusic: "https://music.youtube.com/watch?v=8vWX3Aq7pRQ",
+      amazonMusic: "https://music.amazon.in/albums/B088WTN4K1",
+    },
   },
   {
     id: "2",
@@ -32,7 +38,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-07-28"),
     coverArt: "game-on.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/1RcS75xsPj1YLlhcFje6c5",
+      appleMusic: "https://music.apple.com/us/album/game-on/1523043177",
+      tidal: "https://tidal.com/browse/album/296253826",
+      youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_lF9Z_EJj-7fxk4vKB1LPCLrBrYIQf9N2c",
+      amazonMusic: "https://music.amazon.in/albums/B0C5ZF9LP8",
+    },
   },
   {
     id: "3",
@@ -40,7 +52,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-08-26"),
     coverArt: "chill-out.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/2PUI3lrfX1U6BtnhjIMd57",
+      appleMusic: "https://music.apple.com/in/album/chill-out/1528369083?i=1528369084",
+      tidal: "https://tidal.com/browse/album/151000682",
+      youtubeMusic: "https://music.youtube.com/watch?v=EOYNn4UL69A",
+      amazonMusic: "https://music.amazon.in/albums/B08F9HRX1T",
+    },
   },
   {
     id: "4",
@@ -48,7 +66,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-10-31"),
     coverArt: "first-crush.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/5wy8x7PEpLncFWmmglW1dz",
+      appleMusic: "https://music.apple.com/in/album/first-crush/1534850753?i=1534850754",
+      tidal: "https://tidal.com/browse/album/157845785",
+      youtubeMusic: "https://music.youtube.com/watch?v=tkWjgBpxD8g",
+      amazonMusic: "https://music.amazon.in/albums/B08KTC3GW6",
+    },
   },
   {
     id: "5",
@@ -56,7 +80,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-11-21"),
     coverArt: "arabic-club.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/1E9YwIV7sEAoKOxqM0ZLly",
+      appleMusic: "https://music.apple.com/in/album/arabic-club/1537555513?i=1537555514",
+      tidal: "https://tidal.com/browse/album/286850859",
+      youtubeMusic: "https://music.youtube.com/watch?v=ELS9yRcoQC0",
+      amazonMusic: "https://music.amazon.in/albums/B0C194V13G",
+    },
   },
   {
     id: "6",
@@ -64,7 +94,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2020-11-24"),
     coverArt: "welcome-to-arabia.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/5d3DiFIxQCj9YfzY3uG9xH",
+      appleMusic: "https://music.apple.com/ec/album/welcome-to-arabia-instrumental-single/1538019267",
+      tidal: "https://tidal.com/browse/album/286959449",
+      youtubeMusic: "https://music.youtube.com/watch?v=LMPTXLay6So",
+      amazonMusic: "https://music.amazon.in/albums/B0C1C2V78F",
+    },
   },
   {
     id: "7",
@@ -72,7 +108,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2021-02-11"),
     coverArt: "new-year-2021.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/30ZQWdM6SYRXXVho9EdABY",
+      appleMusic: "https://music.apple.com/ec/album/new-year-2021-single/1549293184",
+      tidal: "https://tidal.com/browse/album/282036283",
+      youtubeMusic: "https://music.youtube.com/watch?v=qneGHdsnwj4",
+      amazonMusic: "https://music.amazon.in/albums/B0BYKQWXQG",
+    },
   },
   {
     id: "8",
@@ -80,7 +122,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2021-05-28"),
     coverArt: "just-groove.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/3035oRIY8b8SqtIe8EG7DI",
+      appleMusic: "https://music.apple.com/ec/album/just-groove-instrumental-version-single/1567359910",
+      tidal: "https://tidal.com/browse/album/184017350",
+      youtubeMusic: "https://music.youtube.com/watch?v=JqOdc0ddFzA",
+      amazonMusic: "https://music.amazon.in/albums/B094VNQSWB",
+    },
   },
   {
     id: "9",
@@ -88,7 +136,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2021-06-21"),
     coverArt: "love-rejected.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/6lku8X37Udp1Dlbv9voJlS",
+      appleMusic: "https://music.apple.com/ec/album/love-rejected-single/1569858787",
+      tidal: "https://tidal.com/browse/album/185841698",
+      youtubeMusic: "https://music.youtube.com/watch?v=sNJLJYBIdOE",
+      amazonMusic: "https://music.amazon.in/albums/B096482P4L",
+    },
   },
   {
     id: "10",
@@ -96,7 +150,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2021-12-03"),
     coverArt: "marne-ka-waqt-nahi.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/4QOjHBTgyzma4AUYBhCLg4",
+      appleMusic: "https://music.apple.com/ec/album/marne-ka-waqt-nahi-single/1595822678",
+      tidal: "https://tidal.com/browse/album/205351123",
+      youtubeMusic: "https://music.youtube.com/watch?v=QlWJfApMtM8",
+      amazonMusic: "https://music.amazon.in/albums/B09LYVGX1T",
+    },
   },
   {
     id: "11",
@@ -104,9 +164,14 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2022-11-02"),
     coverArt: "a-talk-with-the-monster.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/4WXGCC1H0YnWCLjEU1rzMl",
+      appleMusic: "https://music.apple.com/us/album/a-talk-with-the-monster-single/1682312025",
+      tidal: "https://tidal.com/browse/album/289060255",
+      youtubeMusic: "https://music.youtube.com/watch?v=-P9t9raT-G0",
+      amazonMusic: "https://music.amazon.in/albums/B0C2DK8S26",
+    },
   },
-
   {
     id: "12",
     name: "MB Themes, Vol 1",
@@ -114,9 +179,12 @@ export const albums: Album[] = [
     releaseDate: new Date("2023-07-26"),
     coverArt: "mb-themes-vol-1.webp",
     urls: {
+      spotify: "https://open.spotify.com/album/3fNciXXM2LaZEQcSiz7GVj",
       appleMusic: "https://music.apple.com/us/album/mb-themes-vol-1-ep/1699024148",
-      jioSaavn: "https://www.jiosaavn.com/album/mb-themes-vol.-1/TP0dKIdU6QM_?autoplay=enabled",
-    }
+      tidal: "https://tidal.com/browse/album/306915598",
+      youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_kCgm-1xQJm_KBLux-Bp08dyC_2-ce7ABM",
+      amazonMusic: "https://music.amazon.in/albums/B0CCPQ1QCH",
+    },
   },
   {
     id: "13",
@@ -124,7 +192,13 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2023-11-02"),
     coverArt: "present-life.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/7ewTnxGatCC1wQ23KBzLOw",
+      appleMusic: "https://music.apple.com/us/album/present-life-single/1714187066",
+      tidal: "https://tidal.com/browse/album/325211965",
+      youtubeMusic: "https://music.youtube.com/watch?v=tU6fwd8w-Ho",
+      amazonMusic: "https://music.amazon.in/albums/B0CM2MRFGC",
+    },
   },
   {
     id: "14",
@@ -132,6 +206,12 @@ export const albums: Album[] = [
     artist: "Mouli Bheemaneti",
     releaseDate: new Date("2024-02-13"),
     coverArt: "kushi.webp",
-    urls: {}
+    urls: {
+      spotify: "https://open.spotify.com/album/4AtEUmxxhNT5yqdMVz4f3g",
+      appleMusic: "https://music.apple.com/us/album/kushi/1730647414",
+      tidal: "https://tidal.com/browse/album/345175041",
+      youtubeMusic: "https://music.youtube.com/watch?v=70smmcYBkAg&list=OLAK5uy_mFtOcQ_QFoRd1HQIGWSOT8-iWYHpuwdn4",
+      amazonMusic: "https://music.amazon.in/albums/B0CVK59PJB",
+    },
   },
 ]
