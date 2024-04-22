@@ -66,6 +66,33 @@ const album = computed(() => {
 
 });
 
+useSeoMeta({
+  title: `Mouli Bheemaneti - ${album.value?.name}`,
+  // titleTemplate: "Mouli Bheemaneti - ",
+  description: "A song composed by Mouli Bheemaneti. Never heard before. Listen to it now.",
+  ogTitle: "Mouli Bheemaneti - Musical World",
+  ogDescription: "A song composed by Mouli Bheemaneti. Never heard before. Listen to it now.",
+  ogImage: "/manifest-196.png",
+  ogUrl: "[og:url]",
+  twitterTitle: "Mouli Bheemaneti - Musical World",
+  twitterDescription: "A song composed by Mouli Bheemaneti. Never heard before. Listen to it now.",
+  twitterImage: "/manifest-196.png",
+  twitterCard: "summary"
+})
+
+useHead({
+  htmlAttrs: {
+    lang: "en"
+  },
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png"
+    }
+  ]
+})
+
 const redirectToYoutubeChannel = () => {
 
   window.open("https://www.youtube.com/bemouli", "_blank");

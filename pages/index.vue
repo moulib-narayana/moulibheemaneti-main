@@ -14,6 +14,32 @@
 
 <script lang="ts" setup>
 
+useSeoMeta({
+  title: "Mouli Bheemaneti - Musical World",
+  description: "Mouli Bheemaneti is a musician, composer, and producer based in Hyderabad, India.",
+  ogTitle: "Mouli Bheemaneti - Musical World",
+  ogDescription: "Dive into the musical world of Mouli Bheemaneti. Listen to his latest albums and tracks.",
+  ogImage: "/manifest-196.png",
+  ogUrl: "/manifest-196.png",
+  twitterTitle: "Mouli Bheemaneti - Musical World",
+  twitterDescription: "Dive into the musical world of Mouli Bheemaneti. Listen to his latest albums and tracks.",
+  twitterImage: "/manifest-196.png",
+  twitterCard: "summary"
+})
+
+useHead({
+  htmlAttrs: {
+    lang: "en"
+  },
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png"
+    }
+  ]
+})
+
 onBeforeMount(() => {
 
   albums.sort((a, b) => b.id - a.id);
