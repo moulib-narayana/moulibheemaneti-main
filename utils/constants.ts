@@ -9,11 +9,11 @@ export const platformAssetUrl: MusicStreamingService = {
   amazonMusic: "amazon-music.webp",
   gaana: "gaana.webp",
   wynk: "wynk.webp",
+  deezer: "deezer.webp",
+  soundcloud: "soundcloud.webp",
 
   // Not supported yet
-  deezer: "deezer.webp",
   napster: "napster.webp",
-  soundcloud: "soundcloud.webp",
   reverbnation: "reverbnation.webp",
 }
 
@@ -30,6 +30,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/track/142327977",
       youtubeMusic: "https://music.youtube.com/watch?v=8vWX3Aq7pRQ",
       amazonMusic: "https://music.amazon.in/albums/B088WTN4K1",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/love-proposal",
     },
   },
   {
@@ -45,6 +46,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_lF9Z_EJj-7fxk4vKB1LPCLrBrYIQf9N2c",
       amazonMusic: "https://music.amazon.in/albums/B0C5ZF9LP8",
       deezer: "https://www.deezer.com/en/album/444820265",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/sets/game-on-253652484",
     },
   },
   {
@@ -59,6 +61,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/151000682",
       youtubeMusic: "https://music.youtube.com/watch?v=EOYNn4UL69A",
       amazonMusic: "https://music.amazon.in/albums/B08F9HRX1T",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/chill-out",
     },
   },
   {
@@ -73,6 +76,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/157845785",
       youtubeMusic: "https://music.youtube.com/watch?v=tkWjgBpxD8g",
       amazonMusic: "https://music.amazon.in/albums/B08KTC3GW6",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/first-crush",
     },
   },
   {
@@ -88,6 +92,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=ELS9yRcoQC0",
       amazonMusic: "https://music.amazon.in/albums/B0C194V13G",
       deezer: "https://www.deezer.com/en/album/424840657",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/arabic-club",
     },
   },
   {
@@ -103,6 +108,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=LMPTXLay6So",
       amazonMusic: "https://music.amazon.in/albums/B0C1C2V78F",
       deezer: "https://www.deezer.com/en/album/425065757",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/welcome-to-arabia-instrumental",
     },
   },
   {
@@ -118,6 +124,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=qneGHdsnwj4",
       amazonMusic: "https://music.amazon.in/albums/B0BYKQWXQG",
       deezer: "https://www.deezer.com/en/album/417938697",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/new-year-2021",
     },
   },
   {
@@ -132,6 +139,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/184017350",
       youtubeMusic: "https://music.youtube.com/watch?v=JqOdc0ddFzA",
       amazonMusic: "https://music.amazon.in/albums/B094VNQSWB",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/just-groove-instrumental",
     },
   },
   {
@@ -146,6 +154,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/185841698",
       youtubeMusic: "https://music.youtube.com/watch?v=sNJLJYBIdOE",
       amazonMusic: "https://music.amazon.in/albums/B096482P4L",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/love-rejected",
     },
   },
   {
@@ -163,6 +172,7 @@ export const albums: Album[] = [
       jioSaavn: "https://www.jiosaavn.com/album/marne-ka-waqt-nahi/ZFQM36DcopE_",
       gaana: "https://gaana.com/album/marne-ka-waqt-nahi",
       wynk: "https://wynk.in/music/song/marne-ka-waqt-nahi/pp_SE6XY2180384",
+      soundcloud: "https://soundcloud.com/moulibheemaneti-music/marne-ka-waqt-nahi",
     },
   },
   {
