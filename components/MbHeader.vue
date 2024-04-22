@@ -1,7 +1,9 @@
 <template>
   <header class="header">
-    <NuxtImg src="/manifest.png" alt="Mouli Bheemaneti's Brand Logo" sizes="64px" height="50" densities="x1 x2"
-      @click="goToHome()" />
+    <!-- <NuxtImg src="@/assets/images/mb-pose.jpg" alt="Mouli Bheemaneti's Brand Logo" sizes="64px" height="50"
+      densities="x1 x2" @click="goToHome()" /> -->
+
+    <img src="@/assets/images/mb-logo.svg" alt="Mouli Bheemaneti's Brand Logo" @click="goToHome()">
 
     <MbIcon @click="goToSocialAccounts('instagram')">
       <Instagram />

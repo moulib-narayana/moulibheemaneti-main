@@ -2,7 +2,7 @@
   <ClientOnly>
     <NuxtLink :to="albumRoute" class="album-card">
       <div class="album-card__image">
-        <NuxtImg :src="albumArtPath" :alt="`${album.name} - Album Art`" sizes="120px" height="120px"
+        <NuxtImg :src="albumArtPath" :alt="`${album.name} - Album Art`" sizes="120px" height="120px" width="120px"
           densities="x1 x2" />
       </div>
 
