@@ -5,6 +5,10 @@
 
     <img src="@/assets/images/mb-logo.svg" alt="Mouli Bheemaneti's Brand Logo" @click="goToHome()">
 
+    <h1 class="header__title">
+      Mouli Bheemaneti
+    </h1>
+
     <MbIcon @click="goToSocialAccounts('instagram')">
       <Instagram />
     </MbIcon>
@@ -70,7 +74,26 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
     height: 64px;
     width: auto;
     aspect-ratio: 1.28;
-    margin-right: auto;
+
+    @include small-screen {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: auto;
+
+    @include small-screen {
+      font-size: rem(24);
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    @include extra-small-screen {
+      font-size: rem(24);
+      margin-left: 0;
+      margin-right: auto;
+    }
   }
 
   .mb-icon {
@@ -94,6 +117,10 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
 
   @include extra-small-screen {
     padding: 1rem 2rem;
+
+    img {
+      display: none;
+    }
   }
 }
 </style>
