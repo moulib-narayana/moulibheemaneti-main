@@ -156,6 +156,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/205351123",
       youtubeMusic: "https://music.youtube.com/watch?v=QlWJfApMtM8",
       amazonMusic: "https://music.amazon.in/albums/B09LYVGX1T",
+      jioSaavn: "https://www.jiosaavn.com/album/marne-ka-waqt-nahi/ZFQM36DcopE_",
     },
   },
   {
@@ -170,6 +171,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/289060255",
       youtubeMusic: "https://music.youtube.com/watch?v=-P9t9raT-G0",
       amazonMusic: "https://music.amazon.in/albums/B0C2DK8S26",
+      jioSaavn: "https://www.jiosaavn.com/album/a-talk-with-the-monster/5zApY79c8Tk_",
     },
   },
   {
@@ -184,6 +186,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/306915598",
       youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_kCgm-1xQJm_KBLux-Bp08dyC_2-ce7ABM",
       amazonMusic: "https://music.amazon.in/albums/B0CCPQ1QCH",
+      jioSaavn: "https://www.jiosaavn.com/album/mb-themes-vol.-1/TP0dKIdU6QM_",
     },
   },
   {
@@ -198,6 +201,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/325211965",
       youtubeMusic: "https://music.youtube.com/watch?v=tU6fwd8w-Ho",
       amazonMusic: "https://music.amazon.in/albums/B0CM2MRFGC",
+      jioSaavn: "https://www.jiosaavn.com/album/present-life/NiMk69c18X0_",
     },
   },
   {
@@ -212,6 +216,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/345175041",
       youtubeMusic: "https://music.youtube.com/watch?v=70smmcYBkAg&list=OLAK5uy_mFtOcQ_QFoRd1HQIGWSOT8-iWYHpuwdn4",
       amazonMusic: "https://music.amazon.in/albums/B0CVK59PJB",
+      jioSaavn: "https://www.jiosaavn.com/album/kushi/aBB0ZW9IpxA_",
     },
   },
 ]
