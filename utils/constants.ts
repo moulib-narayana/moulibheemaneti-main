@@ -7,10 +7,10 @@ export const platformAssetUrl: MusicStreamingService = {
   jioSaavn: "jio-saavn.webp",
   youtubeMusic: "youtube-music.webp",
   amazonMusic: "amazon-music.webp",
-
-  // Not supported yet
   gaana: "gaana.webp",
   wynk: "wynk.webp",
+
+  // Not supported yet
   deezer: "deezer.webp",
   napster: "napster.webp",
   soundcloud: "soundcloud.webp",
@@ -44,6 +44,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/296253826",
       youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_lF9Z_EJj-7fxk4vKB1LPCLrBrYIQf9N2c",
       amazonMusic: "https://music.amazon.in/albums/B0C5ZF9LP8",
+      deezer: "https://www.deezer.com/en/album/444820265",
     },
   },
   {
@@ -86,6 +87,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/286850859",
       youtubeMusic: "https://music.youtube.com/watch?v=ELS9yRcoQC0",
       amazonMusic: "https://music.amazon.in/albums/B0C194V13G",
+      deezer: "https://www.deezer.com/en/album/424840657",
     },
   },
   {
@@ -100,6 +102,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/286959449",
       youtubeMusic: "https://music.youtube.com/watch?v=LMPTXLay6So",
       amazonMusic: "https://music.amazon.in/albums/B0C1C2V78F",
+      deezer: "https://www.deezer.com/en/album/425065757",
     },
   },
   {
@@ -114,6 +117,7 @@ export const albums: Album[] = [
       tidal: "https://tidal.com/browse/album/282036283",
       youtubeMusic: "https://music.youtube.com/watch?v=qneGHdsnwj4",
       amazonMusic: "https://music.amazon.in/albums/B0BYKQWXQG",
+      deezer: "https://www.deezer.com/en/album/417938697",
     },
   },
   {
@@ -157,6 +161,8 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=QlWJfApMtM8",
       amazonMusic: "https://music.amazon.in/albums/B09LYVGX1T",
       jioSaavn: "https://www.jiosaavn.com/album/marne-ka-waqt-nahi/ZFQM36DcopE_",
+      gaana: "https://gaana.com/album/marne-ka-waqt-nahi",
+      wynk: "https://wynk.in/music/song/marne-ka-waqt-nahi/pp_SE6XY2180384",
     },
   },
   {
@@ -172,6 +178,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=-P9t9raT-G0",
       amazonMusic: "https://music.amazon.in/albums/B0C2DK8S26",
       jioSaavn: "https://www.jiosaavn.com/album/a-talk-with-the-monster/5zApY79c8Tk_",
+      deezer: "https://www.deezer.com/en/album/430065837",
     },
   },
   {
@@ -187,6 +194,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_kCgm-1xQJm_KBLux-Bp08dyC_2-ce7ABM",
       amazonMusic: "https://music.amazon.in/albums/B0CCPQ1QCH",
       jioSaavn: "https://www.jiosaavn.com/album/mb-themes-vol.-1/TP0dKIdU6QM_",
+      deezer: "https://www.deezer.com/en/album/468532555",
     },
   },
   {
@@ -202,6 +210,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=tU6fwd8w-Ho",
       amazonMusic: "https://music.amazon.in/albums/B0CM2MRFGC",
       jioSaavn: "https://www.jiosaavn.com/album/present-life/NiMk69c18X0_",
+      deezer: "https://www.deezer.com/en/album/506846541",
     },
   },
   {
@@ -217,6 +226,7 @@ export const albums: Album[] = [
       youtubeMusic: "https://music.youtube.com/watch?v=70smmcYBkAg&list=OLAK5uy_mFtOcQ_QFoRd1HQIGWSOT8-iWYHpuwdn4",
       amazonMusic: "https://music.amazon.in/albums/B0CVK59PJB",
       jioSaavn: "https://www.jiosaavn.com/album/kushi/aBB0ZW9IpxA_",
+      deezer: "https://www.deezer.com/en/album/547556972",
     },
   },
 ]
