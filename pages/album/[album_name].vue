@@ -195,6 +195,7 @@ const redirectToPlatform = (album: Album, platform: string) => {
 
   &:hover {
     transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.15);
 
     .mb-icon {
       opacity: 1;

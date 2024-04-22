@@ -5,7 +5,7 @@
 
     <img src="@/assets/images/mb-logo.svg" alt="Mouli Bheemaneti's Brand Logo" @click="goToHome()">
 
-    <h1 class="header__title">
+    <h1 class="header__title" @click="goToHome()">
       Mouli Bheemaneti
     </h1>
 
@@ -81,6 +81,7 @@ const goToSocialAccounts = (account: "instagram" | "spotify" | "youtube") => {
   }
 
   &__title {
+    cursor: pointer;
     margin: auto;
 
     @include small-screen {

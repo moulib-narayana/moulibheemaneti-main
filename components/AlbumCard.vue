@@ -59,7 +59,7 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".webp"
   padding: rem(16) rem(16);
   border-radius: rem(8);
 
-  transition: transform 0.3s;
+  transition: all 0.3s;
 
   &__image,
   &__image img {
@@ -85,6 +85,7 @@ const albumRoute = computed(() => `/album/${props.album.coverArt.replace(".webp"
 
   &:hover {
     transform: scale(1.02);
+    background-color: rgba($color: #ffffff, $alpha: 0.15);
   }
 
   @include tab-screen {

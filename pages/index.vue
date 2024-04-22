@@ -1,11 +1,26 @@
 <template>
-  <main class="page page-index">
+  <main class="page-index">
     <div class="jumbotron" />
-    <div class="page-index__discography">
-      <AlbumCard v-for="album in albums" :key="album.id" :album="album" />
+
+    <div class="page page-index__inner">
+      <h1>Discography</h1>
+      <div class="page-index__discography">
+        <AlbumCard v-for="album in albums" :key="album.id" :album="album" />
+      </div>
+
     </div>
   </main>
 </template>
+
+<script lang="ts" setup>
+
+onBeforeMount(() => {
+
+  albums.sort((a, b) => b.id - a.id);
+
+});
+
+</script>
 
 <style lang="scss">
 @use '~/assets/scss/_helpers.scss' as *;
@@ -14,6 +29,12 @@
   display: flex;
   flex-direction: column;
   gap: rem(24);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
 
   &__discography {
     display: grid;
@@ -39,7 +60,11 @@
 }
 
 .jumbotron {
-  background-color: black;
+  background-color: transparent;
   height: rem(80);
+  // height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

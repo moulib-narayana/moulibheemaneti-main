@@ -1,5 +1,5 @@
 export interface Album {
-  id: string;
+  id: number;
   name: string;
   artist: string;
   featuredArtists?: string[];
