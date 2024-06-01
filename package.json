@@ -14,12 +14,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint --max-warnings=0 .",
-    "lint:fix": "eslint --fix .",
     "clean": "rm -rf .nuxt dist node_modules .output yarn.lock",
     "build-clean": "rm -rf .nuxt dist .output",
     "build": "nuxt build",
-    "dev": "yarn lint; nuxt dev",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "p": "nuxt preview",
@@ -29,17 +27,14 @@
     "cbp": "yarn clean; yarn install && yarn build && yarn p"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/image": "^1.5.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/robots": "^3.0.0",
-    "@vueuse/core": "^10.9.0",
-    "eslint": "^8.57.0",
+    "@vueuse/core": "^10.10.0",
     "nuxt": "^3.11.2",
-    "sass": "^1.75.0",
+    "sass": "^1.77.4",
     "sass-loader": "^14.2.1",
-    "vue": "^3.4.23",
+    "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.2.2"
 }
