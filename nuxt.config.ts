@@ -49,6 +49,8 @@ export default defineNuxtConfig({
   experimental: {
     appManifest: true,
   },
+  // Customize the loading indicator
+  spaLoadingTemplate: true,
 
   nitro: {
     compressPublicAssets: true,
