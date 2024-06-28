@@ -239,4 +239,20 @@ export const albums: Album[] = [
       deezer: "https://www.deezer.com/en/album/547556972",
     },
   },
+  {
+    id: 15,
+    name: "A Letter to Kushi",
+    artist: "Mouli Bheemaneti",
+    releaseDate: new Date("2024-06-24"),
+    coverArt: "a-letter-to-kushi.webp",
+    urls: {
+      spotify: "https://open.spotify.com/album/1TDu8hHJur4kbs003aprOo?si=WJQf3AKMTZGjZzg2LSvA6Q",
+      appleMusic: "https://music.apple.com/us/album/a-letter-to-kushi-single/1753980066",
+      tidal: "https://tidal.com/browse/album/371292142",
+      youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_kZjHmFjoJMUAgbYvs_X0xZXYlkLYXEZ6Q",
+      amazonMusic: "https://music.amazon.in/albums/B0D7YPR4T8",
+      jioSaavn: "https://www.jiosaavn.com/album/a-letter-to-kushi/qI4cM,hHcVA_",
+      // deezer: "https://www.deezer.com/en/album/627556972",
+    },
+  }
 ]
